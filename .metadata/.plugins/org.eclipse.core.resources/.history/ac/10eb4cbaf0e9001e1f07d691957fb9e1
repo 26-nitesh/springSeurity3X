@@ -1,0 +1,2 @@
+spring.application.name=ems1
+server.port=9191

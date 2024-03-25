@@ -1,0 +1,8 @@
+spring.application.name=ems1
+server.port=9191
+#spring.datasource.hikari.jdbc-url=
+spring.datasource.url=jdbc:localhost:3306/ems_new
+spring.datasource.username=root
+spring.datasource.password=root
+#spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.jpa.hibernate.ddl-auto=update

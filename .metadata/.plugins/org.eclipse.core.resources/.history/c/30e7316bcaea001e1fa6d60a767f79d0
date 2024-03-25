@@ -1,0 +1,25 @@
+package com.ems.controller;
+
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/emp")
+public class EmpController {
+
+	@GetMapping("/home")
+	public String test() {
+		return "HOME PAGE";
+	}
+	@GetMapping("/admin")
+	@PreAuthorize("ROLE_ADMIN")
+	public String test2() {
+		return "ADMIN PAGE";
+	}
+	@GetMapping("hasRole('ROLE_ADMIN')")
+	public String user() {
+		return "USER PAGE";
+	}
+}
