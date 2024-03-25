@@ -1,4 +1,0 @@
-spring.application.name=ems1
-server.port=9191
-#spring.datasource.hikari.jdbc-url=
-spring.datasource.url=
